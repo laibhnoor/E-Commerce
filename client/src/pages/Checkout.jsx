@@ -1,6 +1,8 @@
 import React from 'react';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// Import useEffect
+import { useState, useEffect } from 'react';
+// Import Link
+import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { ordersAPI } from '../services/api';
@@ -32,6 +34,14 @@ const Checkout = () => {
       cvv: ''
     }
   });
+
+  // This useEffect handles the redirect for an empty cart
+  useEffect(() => {
+    if (cart.length === 0 && step !== 3) {
+      navigate('/cart');
+    }
+  }, [cart, step, navigate]);
+
 
   const handleInputChange = (section, field, value) => {
     setFormData(prev => ({
@@ -100,8 +110,8 @@ const Checkout = () => {
   const tax = subtotal * 0.1;
   const total = subtotal + tax;
 
+  // If the cart is empty, render nothing while the useEffect redirects
   if (cart.length === 0 && step !== 3) {
-    navigate('/cart');
     return null;
   }
 
@@ -412,4 +422,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout; 
+export default Checkout;

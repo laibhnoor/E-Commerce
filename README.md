@@ -2,7 +2,7 @@ E-Commerce Store
 
 A full-stack e-commerce web application built with React, Tailwind CSS, and Vite on the frontend, and Node.js, Express, MongoDB, and Mongoose on the backend. Users can register, log in, browse products, add items to the cart/wishlist, and place orders.
 
-Features
+### Features
 User authentication with JWT (signup, login, logout)
 Product listing and product details
 Cart management (add, remove, update quantity)
@@ -11,14 +11,14 @@ Order creation and order history
 Responsive UI built with Tailwind CSS
 API error handling and token-based authentication
 
-Environment Variables
+### Environment Variables
 
 Create a .env file in the backend folder:
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 PORT=5000
 
-Setup Instructions
+### Setup Instructions
 1. Backend Setup
 Navigate to the backend folder:
 cd backend
@@ -36,7 +36,7 @@ Start the development server:
 npm run dev
 
 
-API Endpoints
+### API Endpoints
 Auth
 POST /api/users/signup → Register a new user
 POST /api/users/login → Login user

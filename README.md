@@ -60,3 +60,14 @@ DELETE /api/wishlist → Remove product from wishlist
 Orders
 GET /api/orders → Get user orders
 POST /api/orders → Create new order
+
+<img width="1598" height="853" alt="image" src="https://github.com/user-attachments/assets/606ee92e-9bc7-44c4-b45c-7a18390816d0" />
+<img width="1599" height="794" alt="image" src="https://github.com/user-attachments/assets/1aa307f5-4e33-4d8d-a6ea-79a3f6b0fd0c" />
+<img width="1597" height="826" alt="image" src="https://github.com/user-attachments/assets/3d265fb6-4f37-4035-9c69-e6907bb2495b" />
+<img width="1600" height="799" alt="image" src="https://github.com/user-attachments/assets/17e51587-29c2-4c97-ac50-90fbc1d92248" />
+<img width="1600" height="807" alt="image" src="https://github.com/user-attachments/assets/be7684f2-cd76-48be-a18e-6527b1f2f511" />
+
+
+
+
+

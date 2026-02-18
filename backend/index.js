@@ -17,7 +17,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173", // local frontend (Vite)
-    process.env.FRONTEND_URL // deployed frontend (Vercel)
+    'https://e-commerce-psi-rose-61.vercel.app'
   ],
   credentials: true
 }));
